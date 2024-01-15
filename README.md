@@ -18,7 +18,7 @@ PS: check of je in de juiste map zit.
 ```
 npx webpack
 ```
-
+Dit is om al je typescript te bundelen zodat de browser typescript kan lezen.
 Open nu de public/dist/index.html met liveserver en je bent klaar om het spel te spelen.
 
 
@@ -26,7 +26,7 @@ Open nu de public/dist/index.html met liveserver en je bent klaar om het spel te
 ![Reken skiën GIF](https://github.com/growthmovesFontys/reken_mario/blob/main/Reken-mario-gif.gif)
 
 
-# documentatie phaser.js 
+# Documentatie phaser.js 
 Phaser.js is een krachtig HTML5 2D game framework dat ontwikkelaars in staat stelt om snel en efficiënt interactieve spellen te ontwikkelen. Het biedt ondersteuning voor zowel Canvas als WebGL, waardoor het flexibel en compatibel is met een breed scala aan apparaten.
 
 ## Kernfuncties van Phaser.js
