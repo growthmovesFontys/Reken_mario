@@ -19,6 +19,7 @@ PS: check of je in de juiste map zit.
 npx webpack
 ```
 Dit is om al je typescript te bundelen zodat de browser typescript kan lezen.
+
 Open nu de public/dist/index.html met liveserver en je bent klaar om het spel te spelen.
 
 
