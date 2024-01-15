@@ -23,7 +23,7 @@ Open nu de public/dist/index.html met liveserver en je bent klaar om het spel te
 
 
 ## Hier heb je een kleine preview van het spel
-![Reken skiën GIF](https://github.com/growthmovesFontys/ski-game-ts/blob/main/Reken-skiën-v1.gif)
+![Reken skiën GIF](https://github.com/growthmovesFontys/reken_mario/blob/main/Reken-mario-gif.gif)
 
 
 # documentatie phaser.js 
