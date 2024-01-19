@@ -13,7 +13,7 @@ export class StartScene extends Phaser.Scene {
   }
 
   create() {
-    this._start_sound = this.sound.add("start");
+    // this._start_sound = this.sound.add("start");
     this._start_sound.play();
 
     let background = this.physics.add.staticGroup();
@@ -37,7 +37,7 @@ export class StartScene extends Phaser.Scene {
 
     // Voeg een event listener toe voor de klik
     startButton.on("pointerdown", () => {
-      this._start_sound.stop();
+      // this._start_sound.stop();
       // Start het spel of ga naar een andere scene
       this.scene.start("RekenMario"); // Vervang 'GameScene' met de key van je hoofdgame scene
     });
