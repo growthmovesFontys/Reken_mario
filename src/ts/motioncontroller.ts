@@ -13,9 +13,10 @@ export class MotionController {
     this.gameScene = gameScene;
   }
 
-  public MovePlayer(
+    public MovePlayer(
     gameScene: Phaser.Scene,
-    player: Phaser.Physics.Arcade.Sprite
+    player: Phaser.Physics.Arcade.Sprite,
+    deltatime: number
   ): void {
     var xPos = 0;
     var yPos = 0;
@@ -35,7 +36,7 @@ export class MotionController {
       } else {
         // Horizontal Movement
         if (xPos > 0 && xPos < 0.33) {
-          player.setVelocityX(-500);
+          player.setVelocityX(-380);
           player.flipX = false;
           if (player.body.touching.down) {
             player.anims.play("running", true);
@@ -46,7 +47,7 @@ export class MotionController {
             player.anims.play("turn");
           }
         } else if (xPos >= 0.66 && xPos <= 1.0) {
-          player.setVelocityX(500);
+          player.setVelocityX(380);
           player.flipX = true;
           if (player.body.touching.down) {
             player.anims.play("running", true);
