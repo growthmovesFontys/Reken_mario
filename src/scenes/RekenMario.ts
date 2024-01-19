@@ -153,7 +153,7 @@ export class RekenMario extends Phaser.Scene {
     this._cursors = this.input!.keyboard!.createCursorKeys();
   }
 
-  update(deltime: any) {
+  update(time: any, deltatime: any) {
     // this.playerMovementKeyboard(deltime);
     // this.playerMovementMotionTracking(deltime);
     if (this._spaceBar.isDown) {
@@ -163,9 +163,9 @@ export class RekenMario extends Phaser.Scene {
       this._tracking_start = false;
     }
     if (this._tracking_start) {
-      this._motion_controller.MovePlayer(this, this._player);
+      this._motion_controller.MovePlayer(this, this._player, deltatime);
     } else {
-      this.playerMovementKeyboard(deltime);
+      this.playerMovementKeyboard(deltatime);
     }
   }
 
